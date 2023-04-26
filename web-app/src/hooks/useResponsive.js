@@ -2,8 +2,9 @@ import { useMediaQuery } from '@mui/material';
 
 const useResponsive = () => {
   const isMobile = useMediaQuery('(max-width: 600px)');
+  const isTablet = useMediaQuery('(max-width: 1000px)');
 
-  return { isMobile };
+  return { isMobile, isTablet };
 };
 
 export default useResponsive;
