@@ -11,6 +11,9 @@ const theme = createTheme({
   palette: {
     success: { main: '#27ae60' },
   },
+  colors: {
+    bg: '#34495e',
+  },
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

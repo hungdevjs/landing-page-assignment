@@ -8,7 +8,7 @@ const texts = [
   'Unlimited speed: No speed or transfer limits',
 ];
 
-const GetStarted = () => {
+const GetStarted = ({ onStart }) => {
   return (
     <Box
       py={8}
@@ -38,6 +38,7 @@ const GetStarted = () => {
             color: 'white',
             boxShadow: 'none !important',
           }}
+          onClick={onStart}
         >
           Get started now
         </Button>
