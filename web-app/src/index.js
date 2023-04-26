@@ -7,7 +7,11 @@ import './index.css';
 import App from './App';
 import { AppContextProvider } from './contexts/app.context';
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    success: { main: '#27ae60' },
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
